@@ -1,7 +1,7 @@
-enum PowerUp
+public enum PowerUp
+
 {
 health,
 shield,
-
 
 }
