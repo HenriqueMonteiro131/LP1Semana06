@@ -26,6 +26,8 @@ namespace GameSix
                 Console.WriteLine($"Enemy name: {array_inimigos[j]}");
             }
 
+            Console.WriteLine("Merci d’utiliser ceprogramme!");
+
         }
     }
 }
