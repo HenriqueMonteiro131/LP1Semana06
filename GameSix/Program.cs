@@ -6,16 +6,18 @@ namespace GameSix
     {
         static void Main(string[] args)
         {
-            enemy = Console.WriteLine("Hi there traveler! Please tell me"+ 
+ 
+            Console.Console.WriteLine("Hi there traveler! Please tell me"+ 
             "the number of enemies between 1 and 9 for this simulation:");
-            Console.ReadLine; 
+            int number = int.Parse(Console.ReadLine());
+            string[] names = new string[n];
 
+            for (int i = 0; i < number; i++)
+{
+            Console.Write("Enter a name for an enemy " + i + ": ");
+            names[i] = Console.ReadLine();
+}
 
-            Console.WriteLine("Hi there traveler! Please tell me"+ 
-            "the number of enemies between 1 and 9 for this simulation:");
-            Console.ReadLine; 
-            int n = int.Parse(Console.ReadLine());
-            int[] myArray = new int[n];
 
 
             }
