@@ -3,9 +3,9 @@ namespace GameSix
     public class Foe
     {
         
-    private string name;
-    private float health;
-    private float shield;
+   private string Name { get; set; }
+    private float Health { get; set; }
+    private float Shield { get; set; }
 
     public Foe (string name)
     {
@@ -40,9 +40,10 @@ namespace GameSix
         return name;
     }
 
-    public void PickUpPower()
+    public void PickUpPower(PowerUp x, float flutuante)
+
     {
-    
+        if ( x == PowerUp.health );
     }
 
     public void Takedamage (float damage)
@@ -53,7 +54,7 @@ namespace GameSix
         {
 
             float damageStillToInflict = - shield;
-            shield  = 0;
+            shield  =0;
             health -= damageStillToInflict;
             if (health < 0) health = 0;
 
