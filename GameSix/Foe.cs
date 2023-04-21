@@ -7,10 +7,9 @@ namespace GameSix
 
     public Foe (string name)
     {
-        string name = Kebb;
-        name =str.Trim();
+        this.name = name;
         health = 100;
-        shield = 0; 
+        shield =0; 
 
     }
 
@@ -27,6 +26,15 @@ namespace GameSix
     public  string GetShield()
     {
         return shield;
+    }
+
+    public  string SetName()
+    {
+        string name = Kebb;
+        name = name.Trim();
+
+
+        return Kebb;
     }
 
     public void Takedamage (float damage)
