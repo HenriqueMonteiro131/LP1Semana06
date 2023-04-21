@@ -40,6 +40,11 @@ namespace GameSix
         return name;
     }
 
+    public void PickUpPower()
+    {
+    
+    }
+
     public void Takedamage (float damage)
     {
 
