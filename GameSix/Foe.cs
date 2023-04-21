@@ -12,4 +12,24 @@ namespace GameSix
         shield = 0; 
 
     }
+
+    public  string GetName()
+    {
+        return name;
+    }
+
+    public void Takedamage (float damage)
+    {
+
+        shield -= damage;
+        if (shield < 0)
+        {
+
+
+
+            
+        }
+
+
+    }
 }
