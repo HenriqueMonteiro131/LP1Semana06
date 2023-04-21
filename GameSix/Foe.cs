@@ -30,7 +30,7 @@ namespace GameSix
 
     public  string SetName()
     {
-        string name = Kebb;
+        string name = "Kebb";
         name = name.Trim();
 
 
