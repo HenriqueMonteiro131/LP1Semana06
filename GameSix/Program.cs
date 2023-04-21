@@ -9,27 +9,24 @@ namespace GameSix
  
             Console.WriteLine("Hi there traveler! Please tell me"+ 
             "the number of enemies between 1 and 9 for this simulation:");
-            int number = int.Parse(Console.ReadLine());
-            Foe[] EnemyArray = new Foe[number];
+            int num_inimigos = int.Parse(Console.ReadLine());
+            string[] array_inimigos = new string[num_inimigos];
 
-                for (int i = 0; i < number; i++)
-                
-                    {
-                        Console.WriteLine("Enter a name for an enemy " + i + ": ");
-                            EnemyArray[i] = Console.ReadLine();
-
-                                Foe inimigo = new Foe(nome);
-                                inimigos[i] = inimigo
-                    
-                    }
-
-                Console.WriteLine("Enemies Names: ")
-                foreach (string n in names)
-                {
-                    Console.WriteLine(n);
-                } 
+            for (int i=0; i < array_inimigos.Length; i++)
+            {
+                Console.Write("Give a name to the enemy: ");
+                string nome_inimigo = Console.ReadLine();
+                array_inimigos[i] = nome_inimigo;
+                Foe inimigo = new Foe(nome_inimigo);
 
             }
-     }    
+            Console.WriteLine(" ");
+            for(int j=0; j < array_inimigos.Length; j++)
+            {
+                Console.WriteLine($"Enemy name: {array_inimigos[j]}");
+            }
+
+        }
+    }
 }
 

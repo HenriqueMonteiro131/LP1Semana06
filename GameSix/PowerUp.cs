@@ -1,0 +1,7 @@
+enum PowerUp
+{
+health,
+shield,
+
+
+}
